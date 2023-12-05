@@ -1,0 +1,318 @@
+/*!----RESET----*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "roboto" serif;
+	font-size: 15px;
+}
+
+/*!----navbar boostrap---*/
+.navbar-brand img {
+	width: auto;
+	height: 70px;
+	transition: 0.3sg;
+
+}
+
+.navbar-toggler {
+	background-color: white;
+}
+
+.navbar-brand img:hover {
+	transform: scale(1.2);
+}
+
+.nav-colors {
+	background-color: black;
+}
+
+.nav-item a {
+	color: white
+}
+
+.nav-item a:hover {
+	color: blue;
+}
+
+.btn {
+	color: white;
+	border: white solid 1px;
+}
+
+.btn-outline-success:hover {
+	color: green;
+	background-color: black;
+
+}
+
+.dropdown-menu a {
+	color: black;
+
+}
+
+/*!---fin navbar boostrap---*/
+
+
+/*!----main----*/
+.hero {
+	background: url(../img/hero2.jpg) fixed center/cover;
+	height: 700px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 30px;
+}
+
+.hero::before {
+	content: "";
+	height: 100%;
+	width: 100%;
+	background: #000;
+	opacity: 0.8;
+}
+
+.hero-info {
+	padding: 0.3em;
+	position: absolute;
+	width: 100%;
+	max-width: 700px;
+	text-align: center;
+	color: white;
+	margin: auto;
+}
+
+.titulo {
+	line-height: 1.5;
+	font-size: 2em;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.p-titulo {
+	line-height: 2;
+	font-size: 0.9;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+
+/*!----productos----*/
+
+.producto {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-bottom: 80px;
+}
+
+.producto div {
+	width: 380px;
+	text-align: center;
+	margin: 20px;
+	box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+	border-radius: 20px;
+}
+
+.producto div img {
+	width: 100%;
+	margin-bottom: 5px;
+	border-radius: 20px;
+}
+
+.producto a {
+	text-decoration: none;
+	background-color: white;
+	color: black;
+	border: #000 solid 1px;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+.producto a:hover {
+	background-color: black;
+	color: white;
+}
+
+/*!---fin productos---*/
+
+
+
+/*!---video---*/
+.miVideo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+}
+
+.miVideo video {
+	width: 100%;
+}
+
+
+/*!---imganes fin----*/
+
+
+/*!-----fin del main----*/
+
+
+/*!---- footer ----*/
+
+.flex-container {
+	margin-top: 60px;
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+	justify-content: space-between;
+	background-color: #000;
+}
+
+.primer-item {
+	width: 100px;
+	height: 100px;
+	align-items: center;
+}
+
+.primer-item img {
+	width: 100%;
+}
+
+.segundo-item {
+
+	width: 200px;
+	height: 100px;
+}
+
+.segundo-item ul li {
+	color: white;
+	text-decoration: none;
+	list-style: none;
+}
+
+.tercer-item {
+
+	width: 200px;
+	height: 200px;
+}
+
+.tercer-item h3 {
+	font-size: medium;
+	color: white;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.tercer-item p {
+	font-size: large;
+	color: white;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	align-items: center;
+}
+
+.cuarto-item {
+	color: whitesmoke;
+	width: 400px;
+	height: 200px;
+}
+
+.cuarto-item img {
+	width: 80px;
+	height: 80px;
+	padding: 10px;
+
+}
+
+/*!-----fin del footer----*/
+
+/*!-----media query-----*/
+
+@media screen and (max-whith:700px) {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*!----pagina guia de tallas----*/
+.tallas h2 {
+	text-align: center;
+	margin-top: 35px;
+	margin-bottom: 50px;
+	font-size: xx-large;
+}
+
+div .talla-mujer {
+	display: flex;
+	justify-content: center;
+}
+
+/*!---fin de guia de tallas---*/
+
+/*!----pagina marca----*/
+
+.titulo2 h2 {
+	text-align: center;
+	font-family: "Roboto", sans-serif;
+	font-size: xx-large;
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+
+/*---Grids---*/
+
+.grid-catalogo {
+	width: 100%;
+	margin-top: 80px;
+	margin-bottom: 80px;
+	display: grid;
+	grid-auto-rows: 500px;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+	grid-template-areas:
+		" esp1 esp4 esp3"
+		"esp5 esp6 esp2";
+}
+
+.grid-catalogo div {
+	position: relative;
+}
+
+.grid-catalogo div h2 {
+	position: absolute;
+	bottom: 0;
+	color: white;
+	background-color: #0000005e;
+	width: 100%;
+	padding: 10px;
+}
+
+.grid-catalogo div img {
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+	box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+/*---fin de grids---*/
+
+
+/*!----fin de marca----*/

@@ -1,0 +1,6 @@
+
+
+es una pagina de venta de ropa aunque en el wireframe tiene mas contenido aun no se ah agregado pero estoy en eso 
+la pagina del index enta representada en el logo de la pagina como un boton y el boton de guia de tallas son los que tienen
+algo de contenido hasta ahora, aunque eh colocado en cada pagina la barra de navegador y lo que llevo del footer 
+bueno creo que con eso cumplo con las solicitudes de hasta ahora 
