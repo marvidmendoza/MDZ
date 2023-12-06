@@ -158,10 +158,6 @@
 	width: 100%;
 }
 
-
-/*!---imganes fin----*/
-
-
 /*!-----fin del main----*/
 
 
@@ -257,6 +253,10 @@
 	justify-content: center;
 }
 
+.talla-mujer img {
+	width: 50%;
+}
+
 /*!---fin de guia de tallas---*/
 
 /*!----pagina marca----*/
@@ -349,6 +349,7 @@ h5 {
 }
 
 /*!-----media query-----*/
+/*---grid---*/
 @media screen and (max-width:1500px) {
 	.grid-catalogo {
 		width: 90%;
@@ -364,6 +365,7 @@ h5 {
 	}
 }
 
+/*---grid---*/
 @media screen and (max-width:1050px) {
 	.grid-catalogo {
 		width: 90%;
@@ -380,12 +382,8 @@ h5 {
 	}
 }
 
+/*--footer--*/
 @media screen and (max-width:655px) {
-
-	/*--footer--*/
-	.flex-container h2 {
-		color: white;
-	}
 
 	.flex-container {
 		flex-direction: column;
