@@ -139,6 +139,7 @@
 	color: white;
 }
 
+
 /*!---fin productos---*/
 
 
@@ -257,7 +258,18 @@
 	font-size: xx-large;
 }
 
-div .talla-mujer {
+.tallas {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.tallas img {
+	width: 97%;
+}
+
+.talla-mujer {
 	display: flex;
 	justify-content: center;
 }
@@ -315,4 +327,16 @@ div .talla-mujer {
 /*---fin de grids---*/
 
 
+
 /*!----fin de marca----*/
+
+/*!---ofertas----*/
+h4 {
+	color: red;
+
+}
+
+h5 {
+	margin-top: 10px;
+	text-decoration: line-through;
+}
