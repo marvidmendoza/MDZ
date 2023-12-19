@@ -1,0 +1,32 @@
+/*!----navbar boostrap---*/
+.navbar-brand img {
+	width: auto;
+	height: 70px;
+	transition: 0.3sg;
+}
+.navbar-toggler {
+	background-color: white;
+}
+.navbar-brand img:hover {
+	transform: scale(1.2);
+}
+.nav-colors {
+	background-color: black;
+}
+.nav-item a {
+	color: white
+}
+.nav-item a:hover {
+	color: blue;
+}
+.btn {
+	color: white;
+	border: white solid 1px;
+}
+.btn-outline-success:hover {
+	color: green;
+	background-color: black;
+}
+.dropdown-menu a {
+	color: black;
+}

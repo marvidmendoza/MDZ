@@ -5,8 +5,6 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	font-family: "roboto" serif;
-	font-size: 15px;
 }
 
 /*!----navbar boostrap---*/
@@ -142,7 +140,13 @@
 
 /*!---fin productos---*/
 
-
+/*!----imagen----*/
+.imagen1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
 
 /*!---video---*/
 .miVideo {
@@ -190,6 +194,7 @@
 
 	width: 200px;
 	height: 100px;
+	font-size: 20px;
 }
 
 .segundo-item ul li {
@@ -198,8 +203,12 @@
 	list-style: none;
 }
 
-.tercer-item {
+.segundo-item ul a {
+	list-style: none;
+	text-decoration: none;
+}
 
+.tercer-item {
 	width: 200px;
 	height: 200px;
 }
