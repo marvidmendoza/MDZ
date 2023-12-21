@@ -94,14 +94,14 @@
       border-radius: 20px; }
     .producto div a {
       text-decoration: none;
-      background-color: white;
+      background-color: black;
       color: black;
       border: #000 solid 1px;
       border-radius: 10px;
       padding: 5px; }
-      .producto div a::hover {
+      .producto div a:hover {
         background-color: black;
-        color: white; }
+        color: black; }
 
 .imagen1 {
   width: 100%; }
@@ -122,14 +122,145 @@
     height: 500px;
     object-fit: cover; }
 
-.flex-container {
-  margin-top: 60px;
+.tallas {
   display: flex;
-  height: 220px;
-  flex-direction: row;
-  align-items: baseline;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .tallas h2 {
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 50px;
+    font-size: xx-large; }
+  .tallas img {
+    width: 97%; }
+
+.talla-mujer {
+  display: flex;
+  justify-content: center; }
+  .talla-mujer img {
+    width: 50%; }
+
+.titulo2 h2 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: xx-large;
+  margin-top: 50px;
+  margin-bottom: 30px; }
+
+/*---Grids---*/
+.grid-catalogo {
+  padding: 40px;
+  width: 100%;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  display: grid;
+  grid-auto-rows: 500px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  grid-template-areas: " esp1 esp4 esp3" "esp5 esp6 esp2"; }
+  .grid-catalogo div {
+    position: relative; }
+    .grid-catalogo div h2 {
+      position: absolute;
+      bottom: 0;
+      color: white;
+      background-color: #0000005e;
+      width: 100%;
+      padding: 10px; }
+    .grid-catalogo div img {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
+
+.espacio1 {
+  grid-area: esp1; }
+
+.espacio2 {
+  grid-area: esp2; }
+
+.espacio3 {
+  grid-area: esp3; }
+
+.espacio4 {
+  grid-area: esp4; }
+
+.espacio5 {
+  grid-area: esp5; }
+
+.espacio6 {
+  grid-area: esp6; }
+
+h4 {
+  color: red; }
+
+h5 {
+  margin-top: 10px;
+  text-decoration: line-through; }
+
+.terminos {
+  background: url(../img/pexels-photo-833052.jpeg) center/cover;
+  height: 700px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .terminos::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: 0.8; }
+
+.terminos-info {
+  padding: 0.3em;
+  position: absolute;
+  width: 100%;
+  max-width: 700px;
+  text-align: justify;
+  color: white;
+  margin: auto; }
+  .terminos-info .titulo4 {
+    line-height: 1.5;
+    font-size: 70px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; }
+  .terminos-info .p-titulo4 {
+    line-height: 2;
+    font-size: large;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; }
+
+.spacio1 {
+  height: 60px;
+  background: rgba(180, 178, 178, 0.253); }
+
+.envios {
+  background: rgba(180, 178, 178, 0.253); }
+  .envios .envios-info {
+    margin-bottom: 20px; }
+  .envios .titulo5 {
+    color: black;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 60px; }
+  .envios .p-titulo5 {
+    text-align: justify;
+    color: black;
+    padding: 100px;
+    font-size: 20px; }
+
+.flex-container {
+  margin-top: 15px;
+  display: flex;
   justify-content: space-between;
-  background-color: #000;
+  align-items: baseline;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  height: 220px;
+  background-color: black;
   color: white; }
 
 .primer-item {
@@ -165,10 +296,31 @@
     align-items: center; }
 
 .cuarto-item {
-  color: whitesmoke;
+  color: white;
   width: 400px;
   height: 180px; }
   .cuarto-item img {
     width: 80px;
     height: 80px;
     padding: 10px; }
+
+/*---grid---*/
+@media screen and (max-width: 1050px) {
+  .grid-catalogo {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "esp1 " "esp5 " "esp2" "esp3" "esp6" "esp4"; } }
+
+/*--footer--*/
+@media screen and (max-width: 655px) {
+  .flex-container {
+    flex-direction: column;
+    align-items: center; }
+  .cuarto-item img {
+    width: 60px;
+    height: 60px; }
+  .cuarto-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px; } }

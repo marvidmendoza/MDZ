@@ -62,14 +62,14 @@
         }
         a{
             text-decoration: none;
-            background-color: nth($list:$coleres , $n:1 );
+            background-color:nth($list: $colores, $n:1 );
             color: nth($list: $colores, $n:1 );
             border: #000 solid 1px;
             border-radius: 10px;
             padding: 5px;
             &:hover{
                 background-color: nth($list: $colores, $n:1);
-	            color:nth($list: $Colores, $n:2 );
+	            color:nth($list: $colores, $n:1 )
             }
         }
     }

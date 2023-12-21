@@ -1,0 +1,27 @@
+.tallas {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+    h2{
+        
+            text-align: center;
+            margin-top: 35px;
+            margin-bottom: 50px;
+            font-size: xx-large;
+        
+    }
+    img {
+        width: 97%;
+    }
+}
+
+.talla-mujer {
+	display: flex;
+	justify-content: center;
+    img {
+        width: 50%;
+    }
+}
+
+
