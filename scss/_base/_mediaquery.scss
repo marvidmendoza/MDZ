@@ -1,0 +1,39 @@
+
+/*---grid---*/
+@media screen and (max-width:1050px) {
+	.grid-catalogo {
+		width: 90%;
+
+		grid-template-columns: repeat(1, 1fr);
+
+		grid-template-areas:
+			"esp1 "
+			"esp5 "
+			"esp2"
+			"esp3"
+			"esp6"
+			"esp4"
+	}
+}
+
+/*--footer--*/
+@media screen and (max-width:655px) {
+
+	.flex-container {
+		flex-direction: column;
+		align-items: center;
+
+	}
+
+	.cuarto-item img {
+		width: 60px;
+		height: 60px;
+	}
+
+	.cuarto-item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100px;
+	}
+}

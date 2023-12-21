@@ -30,3 +30,17 @@
 .dropdown-menu a {
 	color: black;
 }
+
+$colores:black,white,blue,red,yellow;
+
+
+@mixin flex($flex, $justy, $align,$wrap){
+	display: $flex;
+	justify-content: $justy;
+	align-items: $align;
+	flex-wrap: $wrap;
+}
+
+%margenes-section{
+	margin-bottom: 50px;
+}
