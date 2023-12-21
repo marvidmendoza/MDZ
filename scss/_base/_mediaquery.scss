@@ -1,18 +1,30 @@
 
 /*---grid---*/
-@media screen and (max-width:1050px) {
+@media screen and (max-width:1250px) {
 	.grid-catalogo {
-		width: 90%;
+		width: 100%;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-areas:
+			"esp1 esp4"
+			"esp3 esp5"
+			"esp6 esp2"
+	}
+}
+@media screen and (max-width:800px) {
+	.grid-catalogo {
+		width: 100%;
+		margin: auto;
+		gap: 50px;
 
 		grid-template-columns: repeat(1, 1fr);
 
 		grid-template-areas:
 			"esp1 "
-			"esp5 "
-			"esp2"
+			"esp4 "
 			"esp3"
+			"esp5"
 			"esp6"
-			"esp4"
+			"esp2"
 	}
 }
 
@@ -22,18 +34,30 @@
 	.flex-container {
 		flex-direction: column;
 		align-items: center;
-
-	}
-
-	.cuarto-item img {
-		width: 60px;
-		height: 60px;
-	}
-
-	.cuarto-item {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		height: 100px;
+		height: 350px;
+		.segundo-item{
+		ul{
+			margin-bottom: 20px ;
+		}
+		}
+		.tercer-item{
+			display: none;
+		}
+		h2{
+			display:none;
+		}
+		.cuarto-item {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100px;
+			a{	margin-top: 20px;
+				img{
+					width: 50px;
+					height: 50px;
+				}
+			}
+			
+		}
 	}
 }

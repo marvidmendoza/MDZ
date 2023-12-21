@@ -62,7 +62,7 @@
         }
         a{
             text-decoration: none;
-            background-color:nth($list: $colores, $n:1 );
+            background-color:nth($list: $colores, $n:2 );
             color: nth($list: $colores, $n:1 );
             border: #000 solid 1px;
             border-radius: 10px;

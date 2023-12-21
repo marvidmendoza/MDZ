@@ -1,15 +1,13 @@
 .terminos {
 	background: url(../img/pexels-photo-833052.jpeg) center/cover;
 	height: 700px;
+	@include flex(flex, center, center,nowrap);
 	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: center;
     &::before{
         content: "";
 	    height: 100%;
 	    width: 100%;
-	    background: #000;
+	    background: nth($list: $colores, $n:1 );
 	    opacity: 0.8;
         }
     }
@@ -20,7 +18,7 @@
 	width: 100%;
 	max-width: 700px;
 	text-align: justify;
-	color: white;
+	color: nth($list: $colores, $n:2 );
 	margin: auto;
         .titulo4 {
 	        line-height: 1.5;

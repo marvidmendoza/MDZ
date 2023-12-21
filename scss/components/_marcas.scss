@@ -14,14 +14,16 @@
 /*---Grids---*/
 
 .grid-catalogo {
-	padding: 40px;
+    margin: auto;
+    padding: 40px;
 	width: 100%;
 	margin-top: 80px;
 	margin-bottom: 80px;
 	display: grid;
+    justify-content: center;
 	grid-auto-rows: 500px;
 	grid-template-columns: repeat(3, 1fr);
-	gap: 20px;
+	gap: 25px;
 	grid-template-areas:
 		" esp1 esp4 esp3"
         "esp5 esp6 esp2";

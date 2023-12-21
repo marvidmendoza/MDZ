@@ -5,42 +5,44 @@
     height: 220px;
     background-color:nth($list: $colores, $n:1 );
 	color:nth($list: $colores, $n:2);
-}
-    .primer-item{
-        width: 100px;
-	    height: 100px;
-	    align-items: center;
-        img{
-            width: 100%;
-        }
-    }
-    .segundo-item{
+        .primer-item{
+            width: 100px;
+	        height: 100px;
+	        align-items: center;
+                img{
+                    width: 100%;
+                    }
+                }
+        .segundo-item{
         width: 200px;
 	    height: 100px;
-        ul{
-            a{
-                text-decoration: none;
-                list-style: none;
-            }
-            li{ 
-                color: nth($list: $colores, $n:2 );
-                text-decoration: none;
-                list-style: none;
-                font-size: 20px;
+            ul{
+                a{
+                text-decoration:none;
+                list-style:none;
+                    li{ 
+                    color: nth($list: $colores, $n:2 );
+                    text-decoration: none;
+                    list-style: circle;
+                    font-size: 20px;
+                    &:hover{
+                        color: red;
+                    }
+                    }
+                }    
             }
         }
-    }
-    .tercer-item{
+        .tercer-item{
         width: 200px;
         height: 180px;
-        h3{
+            h3{
             font-size: 20px;
 	        color:nth($list: $colores, $n:2 );
 	        font-family: system-ui, -apple-system, BlinkMacSystemFont, 
             'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
             'Open Sans', 'Helvetica Neue', sans-serif;
         }
-        p{
+            p{
             font-size: large;
             color:nth($list: $colores, $n:2);
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 
@@ -48,14 +50,16 @@
             'Open Sans', 'Helvetica Neue', sans-serif;
             align-items: center;}
     }
-    .cuarto-item{
-        color: nth($list: $colores, $n:2);
-        width: 400px;
-        height: 180px;
-        a{}
-        img{
-            width: 80px;
-            height: 80px;
-            padding: 10px;
-        }
+        .cuarto-item{
+            color: nth($list: $colores, $n:2);
+            width: 400px;
+            height: 180px;
+                a{
+                    img{
+                        width: 80px;
+                        height: 80px;
+                        padding: 10px;
+                    }
+                }
     }
+}
