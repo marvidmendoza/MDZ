@@ -1,6 +1,6 @@
 
 /*---grid---*/
-@media screen and (max-width:1250px) {
+@media screen and (max-width:1300px) {
 	.grid-catalogo {
 		width: 100%;
 		grid-template-columns: repeat(2, 1fr);
@@ -26,6 +26,27 @@
 			"esp6"
 			"esp2"
 	}
+}
+/*--terminos y servicios--*/
+@media screen and (max-width:700px) {
+	.terminos-info{
+		.titulo4{
+			font-size: 40px;
+		}
+		
+        .p-titulo4{
+			padding: 20px;
+		}
+	}
+}
+/*---envios y devoluciones---*/
+@media screen and (max-width: 700px){
+.envios{
+	.p-titulo5{
+		padding: 20px;
+		font-size: 15px;
+	}
+}
 }
 
 /*--footer--*/
